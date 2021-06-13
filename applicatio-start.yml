@@ -1,0 +1,7 @@
+- hosts: apache
+  tasks:
+    - name: run yum command
+      command: yum install httpd -y
+      command: systemctl start httpd
+      command: systemctl enable httpd
+      command: echo "this is a yml webserver" > /var/www/html/index.html
